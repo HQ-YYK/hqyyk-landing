@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "generated_at": "2026-11-17T16:07:03.140611+00:00",
+  "learning": [
+    {"kind": "video", "title": "Google Ultra 20x 的家庭组现在可以共享油管会员", "source": "linuxdo", "url": "https://linux.do/t/topic/3190475"},
+    {"kind": "paper", "title": "【开源推广】我做了一款浏览器 AI 论文阅读器插件，原则是美观轻量简洁，支持论文翻译，AI 功能等，可导入导入 zotero", "source": "linuxdo", "url": "https://linux.do/t/topic/3142966"},
+    {"kind": "paper", "title": "DeepMind presented AlphaProof Code: mathematically proving key security properties of Signal's protocol down to the code level.", "source": "x", "url": "https://x.com/GoogleDeepMind/status/2120484246401777737"},
+    {"kind": "paper", "title": "腾讯开源的 DSpine 推测解码挺有意思，但什么时候能在 Mac 上支持 Qwen3.8-27B？", "source": "v2ex", "url": "https://www.v2ex.com/t/1255433"},
+    {"kind": "paper", "title": "Anthropic 发布实验性检测模型掺水的论文", "source": "linuxdo", "url": "https://linux.do/t/topic/3119698"}
+  ],
+  "mainline": {"watched": 0, "total": 17, "intake_pending": 0, "next_module": "M0.1", "next_title": "What is an Interest Point?", "next_url": "https://www.youtube.com/watch?v=wcqbiHonfbo", "next_duration": "6:57"},
+  "deals": [
+    {"title": "Google Antigravity 科学家项目免费使用 Gemini 4 Carbon", "offer": "Antigravity 项目扩展至 10,000 名科学家，提供 Gemini 4 Carbon 免费使用权限", "url": "https://www.linkedin.com/company/googledeepmind/", "value": "未知", "type": "free"},
+    {"title": "Kaggle Notebooks免费GPU", "offer": "每周约30 GPU小时的免费Notebook GPU额度", "url": "https://dev.to/viswaretas_kotra/how-can-you-get-free-cloud-gpus-for-ai-training-522f", "value": "约30 GPU小时/周，按文中$0.29/小时估算年约$450", "type": "free"},
+    {"title": "Modal 每月 $30 免费算力额度", "offer": "每月免费获得 $30 服务器less GPU 算力额度，约 50 小时 T4 或约 12 小时 A100-80GB", "url": "https://toolfreebie.com/modal-serverless-gpu/", "value": "$30/月，文本明确，按年约$360", "type": "free"}
+  ]
+}
