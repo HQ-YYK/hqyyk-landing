@@ -3,6 +3,7 @@
 # 成功/已签到只记日志；失败（网络、鉴权过期、意外返回）才发飞书告警
 # 凭证只存在小兔云 /root/relay-checkin/credentials（600 权限），绝不进聊天与汇报
 # v3 接 5 站：烁、Orbitix、hkai（New API，PAT）+ Sidrune（Sub2API，refresh_token 轮换）+ 蹬蹬堂（自研站，会话 Cookie）
+# v3.1（2026-11-18）：蹬蹬堂重复签到 409 按已签到处理（实测 error 文案“今天已经签到过了”）
 # 深空（标准签到已关闭 + Turnstile 开着，定制接口未确认）暂不接
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 # shellcheck disable=SC1091
@@ -151,7 +152,8 @@ do_sidrune() {
 # do_dengdengtang：蹬蹬堂订阅共享池签到（自研站，非 New API）
 # 接口（2026-11-18 从池子页内联 JS 确认）：POST /ipcheck/api/pool/checkin，
 #   Content-Type: application/json，空 JSON 体 {}，Cookie 会话鉴权，无 CSRF、无验证码。
-#   成功返回 {"points":N,"balance":N,"streak":N}；已签到返回含“已签到”的 error。
+#   成功返回 {"points":N,"balance":N,"streak":N}；重复签到返回 HTTP 409 + error“今天已经签到过了”
+#   （2026-11-18 实测；注意“已经签到”不含“已签到”子串，匹配须用“已经签到/签到过”）。
 # 凭证：DENGDENGTANG_COOKIE（本站会话 Cookie 的 name=value，由用户从自己 Chrome 里复制，
 #   直接写进小兔云凭证文件，Muse 不经手）。Cookie 过期时发鉴权过期卡，重新复制即可。
 # 返回 0=成功或已签到，1=失败（已发告警）
@@ -175,7 +177,7 @@ do_dengdengtang() {
     echo "$TODAY|OK|signed|points=${points:-}|balance=${balance:-}|streak=${streak:-}" > "$STATUS_DIR/dengdengtang"
     return 0
   fi
-  if printf '%s' "$body" | grep -qi '已签到\|already'; then
+  if printf '%s' "$body" | grep -qi '已经签到\|已签到\|签到过\|already'; then
     log "dengdengtang: OK already signed today"
     echo "$TODAY|OK|already" > "$STATUS_DIR/dengdengtang"
     return 0
