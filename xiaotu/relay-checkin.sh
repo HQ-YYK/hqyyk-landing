@@ -4,6 +4,7 @@
 # 凭证只存在小兔云 /root/relay-checkin/credentials（600 权限），绝不进聊天与汇报
 # v3 接 5 站：烁、Orbitix、hkai（New API，PAT）+ Sidrune（Sub2API，refresh_token 轮换）+ 蹬蹬堂（自研站，会话 Cookie）
 # v3.1（2026-11-18）：蹬蹬堂重复签到 409 按已签到处理（实测 error 文案“今天已经签到过了”）
+# v3.2（2026-11-18）：蹬蹬堂已签到判定改 shell case 通配 + HTTP 409 兜底（v3.1 的 grep \| 写法本地能匹配、上机仍 FAIL，原因未明）
 # 深空（标准签到已关闭 + Turnstile 开着，定制接口未确认）暂不接
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 # shellcheck disable=SC1091
@@ -177,8 +178,20 @@ do_dengdengtang() {
     echo "$TODAY|OK|signed|points=${points:-}|balance=${balance:-}|streak=${streak:-}" > "$STATUS_DIR/dengdengtang"
     return 0
   fi
-  if printf '%s' "$body" | grep -qi '已经签到\|已签到\|签到过\|already'; then
-    log "dengdengtang: OK already signed today"
+  # 已签到判定用 shell case 通配，不用 grep 正则：v3.1 的 grep -qi '…\|…' 在本地与 C locale 下
+  # 都能匹配，上小兔云却仍判 FAIL（原因未明；任务汇报称文件里是普通 |，但 od + md5 证实文件
+  # 里的确是 \|，汇报转录有误）。case 通配不受 grep 方言/locale 影响。
+  case "$body" in
+    *已经签到*|*已签到*|*签到过*|*already*|*Already*)
+      log "dengdengtang: OK already signed today"
+      echo "$TODAY|OK|already" > "$STATUS_DIR/dengdengtang"
+      return 0
+      ;;
+  esac
+  # 兜底：本站重复签到固定返回 HTTP 409（2026-11-18 两次实测），body 匹配万一再失手也不误报；
+  # body 截断记进日志，万一 409 有别的含义能看出来。
+  if [ "$http" = "409" ]; then
+    log "dengdengtang: OK already signed today (http=409, body=$(printf '%s' "$body" | head -c 120))"
     echo "$TODAY|OK|already" > "$STATUS_DIR/dengdengtang"
     return 0
   fi
