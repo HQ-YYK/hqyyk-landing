@@ -1,0 +1,8 @@
+[Unit]
+Description=Azure monthly cleanup (apt cache, logs, journal, docker, old kernels)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /root/azure-monthly-cleanup.sh
