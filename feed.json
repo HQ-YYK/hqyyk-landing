@@ -1,11 +1,7 @@
-{
-  "date": "2026-11-19",
-  "generated_at": "2026-11-19T13:10:00+08:00",
-  "items": [
-    {"category": "Large models", "excerpt": "Google 把 Gemini 的聊天记录和模型训练拆成了两个独立开关，可保留记录同时不让对话进训练；代价是关掉历史记录后，聊天内容也要约两个月才删。", "id": "bdbcb9bb-60e1-4868-9ad1-8092fd9cfadb", "title": "Gemini 关掉历史记录后聊天仍存约两个月", "url": "https://www.digitaltoday.co.kr/en/view/127489/google-changes-gemini-policy-keeps-chats-for-about-two-months-even-with-history-off"},
-    {"category": "Free API", "excerpt": "免费计划永久有效，涵盖 11 个免费层模型；邮箱或 Google 注册后在设置里创建 API 密钥就能调用。", "id": "40378853-e747-43af-a4d0-5de15936dfb6", "title": "CallMissed 免费计划送 1000 个 API 积分", "url": "https://freetokens.custats.info/offers/callmissed-free-plan-1000-credits.html"},
-    {"category": "Open models", "excerpt": "Cloudflare 把 Clairic（27B）与 Clairic-flash（9B）开源了，专做从文本、图片和 PDF 里抽结构化值；12 月 1 日前每百万输入 token 只要 0.10 美元。", "id": "a86aa5fa-c179-4337-840d-48c79efe1e30", "title": "Cloudflare makes Clairic and Clairic-flash open-weight", "url": "https://blog.cloudflare.com/open-clairic/"},
-    {"category": "Large models", "excerpt": "Anthropic IPO 定价每股 83 美元，周四在纳斯达克以 ANT 上市，募资至少 680 亿美元，估值 1.5 万亿美元。", "id": "9c10b7a1-e51d-4ae7-8045-d26be3541b9b", "title": "Anthropic prices its IPO at $83 a share", "url": "https://www.calcalistech.com/ctechnews/article/ddyq1vva9"},
-    {"category": "Free API", "excerpt": "Perplexity Decider v1.3 在 OpenRouter 上免费到今天（11 月 19 日）；新加的 locate 路由能返回带起止位置的原文片段。", "id": "9f5cffff-2718-48cd-83d8-ded72d6d629b", "title": "Perplexity Decider v1.3 free on OpenRouter until November 19", "url": "https://nieuws.llmnet.nl/en/perplexity-decider-v1-3"}
-  ]
-}
+{"date": "2026-11-20", "generated_at": "2026-11-20 07:59:13 +0800","items":[
+{"id": "d8c7911f-3db3-469a-86b4-ea715488c634", "title": "vLLM 0.34.0 改了 KV 缓存与 GPU 运行器默认值", "category": "模型部署", "excerpt": "11 月 16 日发布的 vLLM 0.34.0 把可扩展 KV 缓存改为默认，按预热后实际空闲的显存定大小，MiniMax-M3 在 H200 上的缓存从 433k 增至 672k token。同一版删掉 Model Runner V1，只留 V2，旧的 V1 开关会在启动时直接报错。", "url": "https://tensorjournal.com/en/news/vllm-minor-release-mrv2-runner-changes"},
+{"id": "8d027096-89f5-48fc-afbb-4b2fceedae99", "title": "Mistral Studio 上线托管 Agent、工作流与应用", "category": "Agent 工作流", "excerpt": "Mistral 11 月 5 日在 Studio 推出托管 agent、工作流与应用。私有云与本地部署定于 11 月底前到来。", "url": "https://mistral.ai/news/build-with-studio/"},
+{"id": "bd1a722f-c1d9-4c72-9709-452cc3dbbc09", "title": "微软开源小模型 Aion，明年 1 月进 Windows", "category": "开源模型", "excerpt": "微软 11 月 18 日在 Hugging Face 发布了 Aion 1.0 Instruct，一个 2.3B 参数、MIT 协议的开源小模型。优化后的版本将在 2027 年 1 月底前成为 Windows 内置的小语言模型，接替现有的 Phi Silica。", "url": "https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B"},
+{"id": "515c53f0-efd1-46e0-a591-4a85a3f77031", "title": "Merkium offers seven models free, permanently, no card needed", "category": "Free API", "excerpt": "Merkium's current models are free permanently through an OpenAI-compatible API, with no credit card or billing step. Seven models sit on the free list, verified on November 19.", "url": "https://www.merkium.nl/docs/pricing"},
+{"id": "77708666-df55-40fb-b892-4272602546dd", "title": "Anthropic opens 34% up in trading debut", "category": "大模型", "excerpt": "Anthropic shares opened 34% above their IPO price on Thursday. The listing was the first U.S. market debut by a standalone frontier AI lab.", "url": "https://asia.nikkei.com/business/markets/ipo/anthropic-opens-up-34-in-trading-debut-after-record-ipo"}
+]}
