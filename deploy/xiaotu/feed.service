@@ -1,8 +1,0 @@
-[Unit]
-Description=Xiaotu daily feed digest (after learning message)
-After=network-online.target
-Wants=network-online.target
-
-[Service]
-Type=oneshot
-ExecStart=/bin/bash /root/feed.sh
