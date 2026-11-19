@@ -1,0 +1,11 @@
+[Unit]
+Description=Run monthly cleanup check on the 16th at 05:00 UTC
+
+# 机器时区是 UTC；05:00 UTC = 13:00 北京时间；检查的是 15 号三台机器的清理结果
+[Timer]
+OnCalendar=*-*-16 05:00:00
+Persistent=true
+Unit=monthly-cleanup-check.service
+
+[Install]
+WantedBy=timers.target
