@@ -213,6 +213,7 @@ def pick_shortlist(candidates, asn, isp_like):
         shortlist.append({
             "ip": ip, "port": str(node.get("port")), "type": node.get("type"),
             "name": node.get("name"), "country": a.get("countryCode", "?"),
+            "country_name": a.get("country", ""),
             "asn": a.get("as", "?"), "isp": a.get("isp", "?"),
         })
     log(f"shortlist: {len(shortlist)} IPs")
@@ -328,6 +329,28 @@ def trojan_link(p):
     frag = urllib.parse.quote(p["name"], safe="")
     base = f"trojan://{p['password']}@{p['server']}:{p['port']}"
     return f"{base}?{qs}#{frag}" if qs else f"{base}#{frag}"
+
+
+def normalize_name(item, used):
+    """Name weekly nodes so they land in the 其他 group tab.
+
+    Rule (user-set): self-built nodes have no tab and live in GLOBAL only;
+    every other node belongs to a tab. The 其他 tab's filter is
+    '^[A-Z]{2}-[A-Z]', so weekly nodes get 'CC-EnglishCountry' names
+    (e.g. SG-Singapore, CY-Cyprus (2)). Falls back to the original name
+    when the country is unknown (stays in GLOBAL only).
+    """
+    cc = item.get("country", "?")
+    cn = (item.get("country_name") or "").strip()
+    if len(cc) != 2 or not cc.isalpha() or not cn:
+        return item["name"]
+    base = f"{cc.upper()}-{cn}"
+    name, n = base, 2
+    while name in used:
+        name = f"{base} ({n})"
+        n += 1
+    used.add(name)
+    return name
 
 
 def build_link(node):
@@ -692,13 +715,16 @@ def run(args):
         # record tested IPs (shortlist IPs, even if they failed later stages)
         tested |= {s["ip"] for s in shortlist}
         save_json(TESTED_PATH, sorted(tested))
-        # 7. links
+        # 7. links (node names normalized so they land in the 其他 tab)
         cand = {c["ip"]: c["node"] for c in candidates}
         links = []
+        used_names = set()
         for s in final:
             try:
-                links.append({"name": s["name"], "ip": s["ip"],
-                              "link": build_link(cand[s["ip"]])})
+                node = dict(cand[s["ip"]])
+                node["name"] = normalize_name(s, used_names)
+                links.append({"name": node["name"], "ip": s["ip"],
+                              "link": build_link(node)})
             except Exception as e:
                 status["errors"].append(f"link build {s['ip']}: {e}")
         detail["links"] = [{"name": l["name"], "ip": l["ip"]} for l in links]
