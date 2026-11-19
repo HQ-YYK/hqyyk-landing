@@ -1,0 +1,11 @@
+[Unit]
+Description=Run m-ui update check on the 1st of every 2nd month at 03:00 Beijing time
+
+[Timer]
+Timezone=Asia/Shanghai
+OnCalendar=*-02,04,06,08,10,12-01 03:00:00
+Persistent=true
+Unit=mui-update-check.service
+
+[Install]
+WantedBy=timers.target
