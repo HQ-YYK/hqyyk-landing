@@ -1,0 +1,8 @@
+[Unit]
+Description=Check monthly cleanup results on GCP/Huawei/Azure and notify via Feishu
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /root/monthly-cleanup-check.sh
