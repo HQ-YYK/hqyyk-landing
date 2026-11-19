@@ -1,11 +1,16 @@
-# keepalive.ps1 — 天翼云电脑会话保活
-# 保存到 C:\Users\Administrator\keepalive.ps1，在桌面 PowerShell（管理员）里跑：
-#   安装：  powershell -ExecutionPolicy Bypass -File C:\Users\Administrator\keepalive.ps1 -Install
-#   卸载：  powershell -ExecutionPolicy Bypass -File C:\Users\Administrator\keepalive.ps1 -Uninstall
-#   直接跑：powershell -ExecutionPolicy Bypass -File C:\Users\Administrator\keepalive.ps1
-# 作用：每 4 分钟把鼠标轻移 1 像素再移回来，防止会话因空闲被平台回收；
-#       安装时顺带关掉睡眠/休眠，并注册计划任务（登录自启，失败自动重启）。
-# 日志：同目录下的 keepalive.log（启动、心跳每小时一条、报错都记）。
+# keepalive.ps1 - Tianyi cloud PC session keepalive.
+# ASCII ONLY: Tianyi reads UTF-8-no-BOM scripts as GBK, which garbles Chinese
+# and can swallow a $var placed right after a multi-byte char.
+# Install in an elevated PowerShell on the Tianyi desktop:
+#   powershell -ExecutionPolicy Bypass -File C:\Users\Administrator\keepalive.ps1 -Install
+# Uninstall:
+#   powershell -ExecutionPolicy Bypass -File C:\Users\Administrator\keepalive.ps1 -Uninstall
+# Run directly:
+#   powershell -ExecutionPolicy Bypass -File C:\Users\Administrator\keepalive.ps1
+# What it does: every 4 minutes nudges the mouse 1px and back, so the platform
+# does not reclaim the session for idleness. Install also disables sleep /
+# hibernate and registers a scheduled task (auto-start at logon, auto-restart).
+# Log: keepalive.log next to this script (start, hourly heartbeat, errors).
 
 param(
   [switch]$Install,
@@ -24,7 +29,7 @@ function Write-Log($msg) {
 if ($Uninstall) {
   Unregister-ScheduledTask -TaskName $taskName -Confirm:$false -ErrorAction SilentlyContinue
   Write-Log "keepalive task removed"
-  Write-Output "已卸载保活任务 $taskName"
+  Write-Output "Keepalive task $taskName removed"
   exit 0
 }
 
@@ -38,8 +43,8 @@ if ($Install) {
   Register-ScheduledTask -TaskName $taskName -Action $action -Trigger $trigger -Settings $settings -RunLevel Highest -Force | Out-Null
   Start-ScheduledTask -TaskName $taskName
   Write-Log "keepalive installed, task started"
-  Write-Output "保活已安装并启动，任务名：$taskName"
-  Write-Output "日志：$logPath"
+  Write-Output "Keepalive installed and started, task: $taskName"
+  Write-Output "Log: $logPath"
   exit 0
 }
 
@@ -49,9 +54,12 @@ $tick = 0
 while ($true) {
   try {
     $pos = [System.Windows.Forms.Cursor]::Position
-    [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point($pos.X + 1, $pos.Y)
+    if ($tick -eq 0) { Write-Log "cursor pos type: $($pos.GetType().FullName)" }
+    $x = [int]$pos.X
+    $y = [int]$pos.Y
+    [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point(($x + 1), $y)
     Start-Sleep -Milliseconds 200
-    [System.Windows.Forms.Cursor]::Position = $pos
+    [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point($x, $y)
     $tick++
     if ($tick % 15 -eq 0) { Write-Log "heartbeat ($tick ticks)" }
   } catch {
