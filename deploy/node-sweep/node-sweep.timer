@@ -1,0 +1,10 @@
+[Unit]
+Description=Weekly free-node sweep timer (Sundays 03:00 UTC)
+
+[Timer]
+OnCalendar=Sun 03:00
+Persistent=true
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target
