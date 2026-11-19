@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-19",
+  "generated_at": "2026-11-19T13:10:00+08:00",
+  "items": [
+    {"category": "Large models", "excerpt": "Google 把 Gemini 的聊天记录和模型训练拆成了两个独立开关，可保留记录同时不让对话进训练；代价是关掉历史记录后，聊天内容也要约两个月才删。", "id": "bdbcb9bb-60e1-4868-9ad1-8092fd9cfadb", "title": "Gemini 关掉历史记录后聊天仍存约两个月", "url": "https://www.digitaltoday.co.kr/en/view/127489/google-changes-gemini-policy-keeps-chats-for-about-two-months-even-with-history-off"},
+    {"category": "Free API", "excerpt": "免费计划永久有效，涵盖 11 个免费层模型；邮箱或 Google 注册后在设置里创建 API 密钥就能调用。", "id": "40378853-e747-43af-a4d0-5de15936dfb6", "title": "CallMissed 免费计划送 1000 个 API 积分", "url": "https://freetokens.custats.info/offers/callmissed-free-plan-1000-credits.html"},
+    {"category": "Open models", "excerpt": "Cloudflare 把 Clairic（27B）与 Clairic-flash（9B）开源了，专做从文本、图片和 PDF 里抽结构化值；12 月 1 日前每百万输入 token 只要 0.10 美元。", "id": "a86aa5fa-c179-4337-840d-48c79efe1e30", "title": "Cloudflare makes Clairic and Clairic-flash open-weight", "url": "https://blog.cloudflare.com/open-clairic/"},
+    {"category": "Large models", "excerpt": "Anthropic IPO 定价每股 83 美元，周四在纳斯达克以 ANT 上市，募资至少 680 亿美元，估值 1.5 万亿美元。", "id": "9c10b7a1-e51d-4ae7-8045-d26be3541b9b", "title": "Anthropic prices its IPO at $83 a share", "url": "https://www.calcalistech.com/ctechnews/article/ddyq1vva9"},
+    {"category": "Free API", "excerpt": "Perplexity Decider v1.3 在 OpenRouter 上免费到今天（11 月 19 日）；新加的 locate 路由能返回带起止位置的原文片段。", "id": "9f5cffff-2718-48cd-83d8-ded72d6d629b", "title": "Perplexity Decider v1.3 free on OpenRouter until November 19", "url": "https://nieuws.llmnet.nl/en/perplexity-decider-v1-3"}
+  ]
+}
