@@ -1,0 +1,6 @@
+[Unit]
+Description=Weekly node-sweep result notifier (Sundays 03:30-05:30 UTC)
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /root/sweep-notify.sh
