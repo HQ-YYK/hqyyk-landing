@@ -1,0 +1,9 @@
+[Unit]
+Description=Poll m-ui update status every 5 minutes (script gates on the update window)
+
+[Timer]
+OnCalendar=*:0/5
+Unit=mui-update-notify.service
+
+[Install]
+WantedBy=timers.target
