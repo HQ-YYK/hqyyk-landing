@@ -1,0 +1,14 @@
+[Unit]
+Description=Weekly free-node sweep for m-ui
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/root/node-sweep
+ExecStart=/bin/bash /root/node-sweep/run-sweep.sh
+StandardOutput=append:/root/node-sweep/sweep.log
+StandardError=append:/root/node-sweep/sweep.log
+# The sweep takes ~15-25 min (ASN screen + egress + IPPure + panel tests)
+TimeoutStartSec=3600
+Nice=10
