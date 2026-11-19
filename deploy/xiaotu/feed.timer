@@ -1,0 +1,11 @@
+[Unit]
+Description=Run feed digest daily at 08:10 Beijing time
+
+# 机器时区是 UTC，00:10 UTC = 08:10 北京时间（学习消息 08:05 之后）
+[Timer]
+OnCalendar=*-*-* 00:10:00
+Persistent=true
+Unit=feed.service
+
+[Install]
+WantedBy=timers.target
