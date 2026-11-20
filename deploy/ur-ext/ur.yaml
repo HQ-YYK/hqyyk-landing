@@ -1,0 +1,7 @@
+# URnetwork 美国住宅代理，单节点订阅：供 m-ui 以外部订阅（sub）抓取。仅 GCP 本机 127.0.0.1 服务，不公开。
+proxies:
+  - name: UR-US-美国住宅
+    type: http
+    server: 06gv8oqfj2ia9i6673jsg4a812qnsscddvkgu7fsmc9l5oubre3djfrb6g.crisp.bringyour.com
+    port: 7155
+    tls: true
