@@ -1,17 +1,17 @@
 {
-  "date": "2026-11-20",
-  "generated_at": "2026-11-19T23:56:45.117652+00:00",
+  "date": "2026-11-21",
+  "generated_at": "2026-11-20T23:56:42.334817+00:00",
   "learning": [
-    {"kind": "video", "title": "突然发现这个Skill有个超神用法，把儿歌歌词用这个Skill做成定格动画，画面跟着歌词走，然后B站、小红书同步分发‼️同类视频小红书基本赞藏过千。", "source": "x", "url": "https://x.com/EianLu/status/2123361720966217815"},
-    {"kind": "tutorial", "title": "开日区Gemini Pro30元教程，可不用日本节点", "source": "linuxdo", "url": "https://linux.do/t/topic/3205988"},
+    {"kind": "video", "title": "半夜福利，hub站GPT免费蹬", "source": "linuxdo", "url": "https://linux.do/t/topic/3213376"},
     {"kind": "paper", "title": "【开源推广】我做了一款浏览器 AI 论文阅读器插件，原则是美观轻量简洁，支持论文翻译，AI 功能等，可导入导入 zotero", "source": "linuxdo", "url": "https://linux.do/t/topic/3142966"},
+    {"kind": "paper", "title": "如何评价free的claude因为违反地区限制申述秒解", "source": "linuxdo", "url": "https://linux.do/t/topic/3185723"},
     {"kind": "paper", "title": "给 DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic 这个无审查模型做一个中文安全测评", "source": "linuxdo", "url": "https://linux.do/t/topic/3181367"},
     {"kind": "paper", "title": "DeepMind presented AlphaProof Code: mathematically proving key security properties of Signal's protocol down to the code level.", "source": "x", "url": "https://x.com/GoogleDeepMind/status/2120484246401777737"}
   ],
   "mainline": {"watched": 0, "total": 17, "intake_pending": 0, "next_module": "M0.1", "next_title": "What is an Interest Point?", "next_url": "https://www.youtube.com/watch?v=wcqbiHonfbo", "next_duration": "6:57"},
   "deals": [
-    {"title": "Scotiabank StartRight Newcomer Bonus", "offer": "新移民开设StartRight账户，最高可得$1,000奖金（$700+$200+$100），首年免月费", "url": "https://www.settlecanada.ca/banking/scotiabank-startright-review/", "value": "最高$1,000（$700+$200+$100）", "type": "free"},
-    {"title": "GitHub学生开发者包", "offer": "验证学生身份后免费获得GitHub Pro、Copilot等100+开发工具及云额度。", "url": "https://collegehobbies.com/article/github-student-developer-pack-worth-it/", "value": "$228订阅免费2年 + $200 DigitalOcean额度，另含Copilot Pro等", "type": "free"},
-    {"title": "ElevenLabs 学生优惠：$165 credits", "offer": "学生可获得 $165 ElevenLabs credits，含 Creator plan 试用及 ElevenReader Ultra 免费1年", "url": "https://www.getaiperks.com/en/ai/elevenlabs-for-students", "value": "约$165额度", "type": "trial"}
+    {"title": "OpenAI API 最高 $1,000 免费额度（学生与研究者）", "offer": "学生与研究者最高可获得 $1,000 OpenAI API 额度，有效期 12 个月", "url": "https://perq.sh/category/llm-api", "value": "最高 $1,000 OpenAI API 额度，有效期 12 个月", "type": "free"},
+    {"title": "OpenAI API 最高 $1000 研究者额度", "offer": "面向研究者提供最高 $1000 OpenAI API 额度，有效期 12 个月", "url": "https://perq.sh/category/llm-api", "value": "最高$1000 API额度，有效期12个月", "type": "free"},
+    {"title": "Google Cloud $300 新用户额度", "offer": "新用户可获得$300云服务额度，有效期90天", "url": "https://alexwebhosting.com/free-cloud-server/", "value": "$300额度，90天有效", "type": "trial"}
   ]
 }
