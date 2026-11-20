@@ -1,9 +1,0 @@
-[Unit]
-Description=Xiaotu watchdog: self-check scheduled jobs every 30 min
-After=network-online.target
-Wants=network-online.target
-
-[Service]
-Type=oneshot
-TimeoutStartSec=180
-ExecStart=/bin/bash /root/watchdog.sh
