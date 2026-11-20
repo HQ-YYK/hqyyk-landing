@@ -1,8 +1,9 @@
 # Install the rewritten notify-feishu.ps1 on Tianyi.
 # The webhook URL never leaves this machine: it is read from the old script
-# and injected into the new one (which carries only a placeholder).
+# and saved to feishu-webhook.txt, which the new script reads at runtime.
 $AdminDir = "C:\Users\Administrator"
 $Old = Join-Path $AdminDir "notify-feishu.ps1"
+$WebhookFile = Join-Path $AdminDir "feishu-webhook.txt"
 $Result = Join-Path $PSScriptRoot "feishu-install-result.txt"
 $Log = @()
 $Log += "date: " + (Get-Date).ToString("yyyy-MM-dd HH:mm:ss")
@@ -15,11 +16,10 @@ try {
   if (-not $M.Success) { throw "webhook not found in old script" }
   $Hook = $M.Value
   $Log += "webhook found: yes, length $($Hook.Length)"
-  $NewText = [System.IO.File]::ReadAllText($NewFile.FullName, [System.Text.Encoding]::UTF8)
-  if ($NewText -notmatch "__FEISHU_WEBHOOK__") { throw "placeholder missing in new script" }
-  $NewText = $NewText.Replace("__FEISHU_WEBHOOK__", $Hook)
-  [System.IO.File]::WriteAllText($Old, $NewText, [System.Text.Encoding]::UTF8)
-  $Log += "installed: yes, $($NewText.Length) chars"
+  [System.IO.File]::WriteAllText($WebhookFile, $Hook, [System.Text.Encoding]::ASCII)
+  $Log += "webhook file written: yes"
+  Copy-Item $NewFile.FullName $Old -Force
+  $Log += "installed: yes"
   $Resp = & $Old -Branch "test" -Summary "encoding fix test"
   $Log += "test code: $($Resp.code), msg: $($Resp.msg)"
 } catch {
