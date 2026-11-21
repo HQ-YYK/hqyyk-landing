@@ -1,0 +1,20 @@
+{
+  "outbounds": [
+    {
+      "outbounds": [
+        "美国主线路",
+        "德国[备用节点]",
+        "UR-US-美国住宅"
+      ],
+      "tag": "自建",
+      "type": "selector"
+    },
+    {
+      "outbounds": [
+        "UR-US-美国住宅"
+      ],
+      "tag": "URnetwork",
+      "type": "selector"
+    }
+  ]
+}
