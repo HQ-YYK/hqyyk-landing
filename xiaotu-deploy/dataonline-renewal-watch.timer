@@ -1,0 +1,9 @@
+[Unit]
+Description=Run DataOnline renewal watch weekly on Sunday at 08:30 Beijing (00:30 UTC)
+
+[Timer]
+OnCalendar=Sun 00:30
+Persistent=true
+
+[Install]
+WantedBy=timers.target
