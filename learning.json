@@ -1,17 +1,17 @@
 {
-  "date": "2026-11-22",
-  "generated_at": "2026-11-21T23:57:17.106066+00:00",
+  "date": "2026-11-23",
+  "generated_at": "2026-11-22T23:57:28.594187+00:00",
   "learning": [
-    {"kind": "video", "title": "hub站免费6.1sol", "source": "linuxdo", "url": "https://linux.do/t/topic/3218744"},
     {"kind": "video", "title": "半夜福利，hub站GPT免费蹬", "source": "linuxdo", "url": "https://linux.do/t/topic/3213376"},
     {"kind": "paper", "title": "开源一个 Agent 长期记忆系统：262k 多跳 48.3%，高于 CAR 论文报告的 41%", "source": "v2ex", "url": "https://www.v2ex.com/t/1258680"},
+    {"kind": "video", "title": "hub站免费6.1sol", "source": "linuxdo", "url": "https://linux.do/t/topic/3218744"},
     {"kind": "paper", "title": "【开源推广】我做了一款浏览器 AI 论文阅读器插件，原则是美观轻量简洁，支持论文翻译，AI 功能等，可导入导入 zotero", "source": "linuxdo", "url": "https://linux.do/t/topic/3142966"},
     {"kind": "paper", "title": "如何评价free的claude因为违反地区限制申述秒解", "source": "linuxdo", "url": "https://linux.do/t/topic/3185723"}
   ],
   "mainline": {"watched": 0, "total": 17, "intake_pending": 0, "next_module": "M0.1", "next_title": "What is an Interest Point?", "next_url": "https://www.youtube.com/watch?v=wcqbiHonfbo", "next_duration": "6:57"},
   "deals": [
-    {"title": "Google Cloud 研究额度最高 $5,000", "offer": "博士生可申请最高 $5,000 的 Google Cloud 研究额度", "url": "https://freeaihub.org/en/", "value": "最高$5,000研究额度", "type": "free"},
-    {"title": "BBVA开户首年最高€760奖励", "offer": "开户时输入指定代码并使用账户，首年最高可得€760，如同时转入储蓄最高可得€1,060。", "url": "https://www.bbva.es/en/personas/productos/cuentas.html", "value": "最高€760，约$880（带储蓄最高€1,060）", "type": "free"},
-    {"title": "Oracle Cloud 免费服务器（长期免费）", "offer": "长期免费获得1台Arm实例（最高2 OCPU、12GB内存）及2台小型AMD实例", "url": "https://askgpu.com/free-vps-tiers-oracle-aws-google-azure/", "value": "长期免费，按同配置VPS市价估算年价值约$300", "type": "free"}
+    {"title": "OpenAI API 免费额度最高$1,000", "offer": "最高可获得$1,000 OpenAI API credits，有效期12个月", "url": "https://perq.sh/category/llm-api", "value": "最高$1,000，有效期12个月", "type": "free"},
+    {"title": "BBVA 开户首年最高€760奖励", "offer": "使用代码PLAN10开户，首年使用账户最高可得€760，带入储蓄最高€1,060，账户及借记卡€0管理费。", "url": "https://www.bbva.es/en/personas/productos/cuentas.html", "value": "最高€760（约$880），带储蓄最高€1,060", "type": "free"},
+    {"title": "AWS新客$200云额度", "offer": "新客可获得最高$200额度，有效期最长6个月，用于AWS云服务/VPS。", "url": "https://askgpu.com/free-vps-tiers-oracle-aws-google-azure/", "value": "约$200额度", "type": "trial"}
   ]
 }
