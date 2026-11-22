@@ -1,6 +1,0 @@
-[Unit]
-Description=DataOnline free hosting renewal watch (daily)
-
-[Service]
-Type=oneshot
-ExecStart=/bin/bash /root/dataonline-renewal-watch.sh
