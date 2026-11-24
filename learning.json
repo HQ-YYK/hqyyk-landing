@@ -1,17 +1,17 @@
 {
-  "date": "2026-11-24",
-  "generated_at": "2026-11-23T23:56:44.791051+00:00",
+  "date": "2026-11-25",
+  "generated_at": "2026-11-24T23:57:10.074439+00:00",
   "learning": [
-    {"kind": "tutorial", "title": "现在如何继续订阅 claude? 成本太大了。", "source": "v2ex", "url": "https://www.v2ex.com/t/1259123"},
-    {"kind": "tutorial", "title": "【羊毛】免费一个月mistral pro，附带详细教程", "source": "nodeseek", "url": "https://www.nodeseek.com/post-1075487-1"},
-    {"kind": "tutorial", "title": "大家用中转站如何确保站点不偷数据的？", "source": "linuxdo", "url": "https://linux.do/t/topic/3228010"},
-    {"kind": "video", "title": "半夜福利，hub站GPT免费蹬", "source": "linuxdo", "url": "https://linux.do/t/topic/3213376"},
-    {"kind": "paper", "title": "开源一个 Agent 长期记忆系统：262k 多跳 48.3%，高于 CAR 论文报告的 41%", "source": "v2ex", "url": "https://www.v2ex.com/t/1258680"}
+    {"kind": "paper", "title": "HuePrint：模型身份识别的帕累托前沿方案", "source": "linuxdo", "url": "https://linux.do/t/topic/3237614"},
+    {"kind": "tutorial", "title": "免费领取 1 个月 Gemini Ultra 1 的教程", "source": "linuxdo", "url": "https://linux.do/t/topic/3237674"},
+    {"kind": "tutorial", "title": "Claude 使用教程｜使用NodeCloak，隐藏你的真实环境，让Claude再也封不到你的号", "source": "nodeseek", "url": "https://www.nodeseek.com/post-1075028-1"},
+    {"kind": "tutorial", "title": "（附带教程）希望可以帮到你 我人生第一只野生甲骨文。开出来了，快去薅。", "source": "nodeseek", "url": "https://www.nodeseek.com/post-1076458-1"},
+    {"kind": "video", "title": "半夜福利，hub站GPT免费蹬", "source": "linuxdo", "url": "https://linux.do/t/topic/3213376"}
   ],
   "mainline": {"watched": 0, "total": 17, "intake_pending": 0, "next_module": "M0.1", "next_title": "What is an Interest Point?", "next_url": "https://www.youtube.com/watch?v=wcqbiHonfbo", "next_duration": "6:57"},
   "deals": [
-    {"title": "Bybit Card 迎新活动：最高120 USDT奖励", "offer": "新用户及首次持卡人完成开卡、消费等任务，最高可得120 USDT奖励", "url": "https://www.bybit.com/ed-ED/press/post/bybit-launches-bybit-card-welcome-campaign-offering-up-to-120-usdt-in-rewards-for-new-users-and-first-time-cardholders-bltab38f06a14ef80d9", "value": "最高120 USDT", "type": "free"},
-    {"title": "Hyperbeat Pay $15 开卡奖励", "offer": "使用优惠码 SPENDNODE 注册 Hyperbeat Pay 可得 $15 奖励。", "url": "https://www.spendnode.io/crypto-cards/hyperbeat/", "value": "$15 开卡奖励", "type": "free"},
-    {"title": "Solid Card 推广码 $10 奖励", "offer": "使用推广码 75LP9 申请 Solid 免费虚拟 Visa 卡得$10奖励", "url": "https://www.spendnode.io/crypto-cards/solid/", "value": "约$10卡奖励", "type": "free"}
+    {"title": "DigitalOcean $200免费额度（60天）", "offer": "提供200美元免费额度，有效期60天", "url": "https://vpscomparehub.com/blog/vps-free-trial/", "value": "约$200额度", "type": "trial"},
+    {"title": "AWS 新客 $200 免费额度", "offer": "新客可获得最高 $200 免费额度，有效期 6 个月，用于云服务/VPS 试用。", "url": "https://askgpu.com/free-vps-tiers-oracle-aws-google-azure/", "value": "约$200额度", "type": "trial"},
+    {"title": "GitHub Education Student Developer Pack", "offer": "学生验证后免费获得 GitHub Pro、Copilot Pro、Azure 额度、JetBrains IDE 等权益。", "url": "https://slickdeals.net/forums/showpost.php?p=179993707&postcount=1", "value": "约$200，含 Copilot Pro 年费约$120 及 Azure 等权益估算，未明确总额", "type": "free"}
   ]
 }
