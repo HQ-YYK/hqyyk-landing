@@ -1,17 +1,17 @@
 {
-  "date": "2026-11-26",
-  "generated_at": "2026-11-25T23:56:48.415617+00:00",
+  "date": "2026-11-27",
+  "generated_at": "2026-11-26T23:58:20.827310+00:00",
   "learning": [
-    {"kind": "tutorial", "title": "ChatGPT Team官方福利： 免费拿125刀优惠，一条龙上车教程", "source": "linuxdo", "url": "https://linux.do/t/topic/3240736"},
-    {"kind": "tutorial", "title": "GPT Team 5席位教程，免费开五席位", "source": "linuxdo", "url": "https://linux.do/t/topic/3242161"},
-    {"kind": "tutorial", "title": "如何从全世界找到离你最快的 vps", "source": "nodeseek", "url": "https://www.nodeseek.com/post-1080621-1"},
-    {"kind": "tutorial", "title": "〖教程〗如何开通黑五土区 gemini pro 四百多一年", "source": "nodeseek", "url": "https://www.nodeseek.com/post-1080843-1"},
-    {"kind": "tutorial", "title": "反重力输出进度文字教程，改成跟codex类似", "source": "nodeseek", "url": "https://www.nodeseek.com/post-1079027-1"}
+    {"kind": "tutorial", "title": "关于Gemini美区学生认证转日区后月付不是720日元教程", "source": "nodeseek", "url": "https://www.nodeseek.com/post-1082656-1"},
+    {"kind": "tutorial", "title": "〖Muse注册最新教程〗分10步，5分钟即可完成。跳过年龄+绑卡。", "source": "nodeseek", "url": "https://www.nodeseek.com/post-1083552-1"},
+    {"kind": "tutorial", "title": "【Muse注册最新教程】分10步，5分钟即可完成。跳过年龄+绑卡。", "source": "nodeseek", "url": "https://www.nodeseek.com/post-1083593-1"},
+    {"kind": "video", "title": "半夜福利，hub站GPT免费蹬", "source": "linuxdo", "url": "https://linux.do/t/topic/3213376"},
+    {"kind": "paper", "title": "开源一个 Agent 长期记忆系统：262k 多跳 48.3%，高于 CAR 论文报告的 41%", "source": "v2ex", "url": "https://www.v2ex.com/t/1258680"}
   ],
   "mainline": {"watched": 0, "total": 17, "intake_pending": 0, "next_module": "M0.1", "next_title": "What is an Interest Point?", "next_url": "https://www.youtube.com/watch?v=wcqbiHonfbo", "next_duration": "6:57"},
   "deals": [
-    {"title": "计算机专业学生免费开发工具包（GitHub Copilot / JetBrains / $100 Azure / 1年 Google AI Pro）", "offer": "验证学生身份免费领取 JetBrains IDE、GitHub Copilot、$100 Azure 额度、1年 Google AI Pro 等，每年价值超$1,000", "url": "https://compscicentral.com/student-discounts-on-tech/", "value": "文章称验证的计算机专业学生每年可领超$1,000免费/折扣软件与服务，含$100 Azure额度", "type": "free"},
-    {"title": "GitHub Student Developer Pack（学生开发者包）", "offer": "验证学生免费获得 GitHub Copilot、JetBrains IDE、$100 Azure 额度及一年 Google AI Pro 等权益", "url": "https://compscicentral.com/student-discounts-on-tech/", "value": "文章称验证学生每年可省超$1000，含 $100 Azure 额度、Copilot、一年 Google AI Pro 等", "type": "free"},
-    {"title": "Google AI Pro 免费1年", "offer": "免费获得1年 Google AI Pro", "url": "https://perq.sh/category/llm-api", "value": "免费1年，约$240（按约$20/月估算，摘要未给出具体金额）", "type": "free"}
+    {"title": "AWS 新客免费额度 $200", "offer": "新客户最高可得$200免费额度，可用于试用云服务器等服务", "url": "https://askgpu.com/free-vps-tiers-oracle-aws-google-azure/", "value": "约$200额度", "type": "trial"},
+    {"title": "Akamai Linode $100-$200免费额度", "offer": "注册可获得$100-$200免费额度", "url": "https://vpscomparehub.com/blog/vps-free-trial/", "value": "$100-$200额度", "type": "trial"},
+    {"title": "AI21 Labs $10免费试用额度（7天）", "offer": "$10免费试用额度，有效期7天，无需信用卡，可调用 Jamba 模型", "url": "https://that.promo/free-ai-api-credits", "value": "$10额度，有效7天", "type": "trial"}
   ]
 }
