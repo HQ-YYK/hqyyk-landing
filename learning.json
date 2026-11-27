@@ -1,17 +1,17 @@
 {
-  "date": "2026-11-27",
-  "generated_at": "2026-11-26T23:58:20.827310+00:00",
+  "date": "2026-11-28",
+  "generated_at": "2026-11-27T23:57:52.720968+00:00",
   "learning": [
-    {"kind": "tutorial", "title": "关于Gemini美区学生认证转日区后月付不是720日元教程", "source": "nodeseek", "url": "https://www.nodeseek.com/post-1082656-1"},
-    {"kind": "tutorial", "title": "〖Muse注册最新教程〗分10步，5分钟即可完成。跳过年龄+绑卡。", "source": "nodeseek", "url": "https://www.nodeseek.com/post-1083552-1"},
-    {"kind": "tutorial", "title": "【Muse注册最新教程】分10步，5分钟即可完成。跳过年龄+绑卡。", "source": "nodeseek", "url": "https://www.nodeseek.com/post-1083593-1"},
-    {"kind": "video", "title": "半夜福利，hub站GPT免费蹬", "source": "linuxdo", "url": "https://linux.do/t/topic/3213376"},
-    {"kind": "paper", "title": "开源一个 Agent 长期记忆系统：262k 多跳 48.3%，高于 CAR 论文报告的 41%", "source": "v2ex", "url": "https://www.v2ex.com/t/1258680"}
+    {"kind": "tutorial", "title": "学习 Multi-Agent 编排，很容易就联想到“分布式”：看懂 DeepSeek Harness 的 Subagent 底座只需要 6 个 Linux 进程概念", "source": "x", "url": "https://x.com/antiAIvo/status/2126226502387900519"},
+    {"kind": "tutorial", "title": "用不了 Claude，但很喜欢它客户端里的记忆、Project、Computer Use 和 HTML 实时预览——想自己套壳 Antigravity CLI 搓一个极简客户端", "source": "x", "url": "https://x.com/antiAIvo/status/2126123516877795788"},
+    {"kind": "tutorial", "title": "低成本 VPS 上部署 Claude Code 完整指南", "source": "nodeseek", "url": "https://www.nodeseek.com/post-1085034-1"},
+    {"kind": "tutorial", "title": "如何评价 DeepSeek 网页和 App 端开始展示消耗额度？", "source": "v2ex", "url": "https://www.v2ex.com/t/1260376"},
+    {"kind": "tutorial", "title": "手工注册很多muse账号的教程", "source": "nodeseek", "url": "https://www.nodeseek.com/post-1084185-1"}
   ],
-  "mainline": {"watched": 0, "total": 17, "intake_pending": 0, "next_module": "M0.1", "next_title": "What is an Interest Point?", "next_url": "https://www.youtube.com/watch?v=wcqbiHonfbo", "next_duration": "6:57"},
+  "mainline": {"watched": 0, "total": 0, "intake_pending": 0, "next_module": null, "next_title": null, "next_url": null, "next_duration": null},
   "deals": [
-    {"title": "AWS 新客免费额度 $200", "offer": "新客户最高可得$200免费额度，可用于试用云服务器等服务", "url": "https://askgpu.com/free-vps-tiers-oracle-aws-google-azure/", "value": "约$200额度", "type": "trial"},
-    {"title": "Akamai Linode $100-$200免费额度", "offer": "注册可获得$100-$200免费额度", "url": "https://vpscomparehub.com/blog/vps-free-trial/", "value": "$100-$200额度", "type": "trial"},
-    {"title": "AI21 Labs $10免费试用额度（7天）", "offer": "$10免费试用额度，有效期7天，无需信用卡，可调用 Jamba 模型", "url": "https://that.promo/free-ai-api-credits", "value": "$10额度，有效7天", "type": "trial"}
+    {"title": "Kimi API 免费额度（最高$20,000）", "offer": "获选申请人可获最高$20,000 Kimi API 额度，约70亿 tokens，另含技术支持与早期模型访问", "url": "https://that.promo/free-ai-api-credits", "value": "最高约$20,000 Kimi API额度（约70亿tokens），仅用于模型使用、非现金", "type": "free"},
+    {"title": "Kimi API 最高 $20,000 额度", "offer": "获选申请人最高可获得 $20,000 Kimi API 额度（约 70 亿 tokens），另含技术支持与早期模型访问。", "url": "https://that.promo/free-ai-api-credits", "value": "约$20,000额度，约70亿tokens", "type": "free"},
+    {"title": "BBVA 免费在线账户首年最高得 €760", "offer": "开通 BBVA 免管理费在线账户，首年使用账户最高可得 €760。", "url": "https://www.bbva.es/en/general/hazte-cliente/abrir-cuenta-bancaria-online.app.html", "value": "最高€760，约$889", "type": "free"}
   ]
 }
